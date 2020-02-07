@@ -1,0 +1,31 @@
+2020-02-04 01:41:08,580 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-02-04 01:41:08,580 WARN No file matches via include "/etc/supervisord.d/*.ini"
+2020-02-04 01:41:08,587 INFO RPC interface 'supervisor' initialized
+2020-02-04 01:41:08,587 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-02-04 01:41:08,587 INFO supervisord started with pid 1
+2020-02-04 01:41:09,589 INFO spawned: 'apache2' with pid 8
+2020-02-04 01:41:09,591 INFO spawned: 'php-fpm7.4' with pid 9
+2020-02-04 01:41:09,606 INFO success: apache2 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-04 01:41:10,617 INFO success: php-fpm7.4 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 07:18:00,835 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-02-05 07:18:00,836 WARN No file matches via include "/etc/supervisord.d/*.ini"
+2020-02-05 07:18:00,842 INFO RPC interface 'supervisor' initialized
+2020-02-05 07:18:00,842 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-02-05 07:18:00,843 INFO supervisord started with pid 1
+2020-02-05 07:18:01,845 INFO spawned: 'apache2' with pid 8
+2020-02-05 07:18:01,847 INFO spawned: 'php-fpm7.4' with pid 9
+2020-02-05 07:18:01,865 INFO success: apache2 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-05 07:18:02,876 INFO success: php-fpm7.4 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 07:46:39,398 WARN received SIGTERM indicating exit request
+2020-02-05 07:46:39,399 INFO waiting for apache2, php-fpm7.4 to die
+2020-02-05 07:46:40,402 INFO stopped: php-fpm7.4 (exit status 0)
+2020-02-05 07:46:40,434 INFO stopped: apache2 (exit status 0)
+2020-02-05 07:46:56,305 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-02-05 07:46:56,305 WARN No file matches via include "/etc/supervisord.d/*.ini"
+2020-02-05 07:46:56,313 INFO RPC interface 'supervisor' initialized
+2020-02-05 07:46:56,313 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-02-05 07:46:56,314 INFO supervisord started with pid 1
+2020-02-05 07:46:57,319 INFO spawned: 'apache2' with pid 8
+2020-02-05 07:46:57,321 INFO spawned: 'php-fpm7.4' with pid 9
+2020-02-05 07:46:57,337 INFO success: apache2 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-05 07:46:58,349 INFO success: php-fpm7.4 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

@@ -1,0 +1,35 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    container_name: centos8_apache_UT
+    network_mode: bridge
+    ports:
+      - "9998:9998"
+      - "8443:443"
+    volumes:
+      - ./data/:/var/www/html/:rw
+      - ./config/httpd/httpd.conf:/etc/httpd/conf/httpd.conf
+      - ./config/supervisor/supervisord.conf:/etc/supervisord.conf
+      - ./log/supervisor/:/var/log/supervisor/
+    # network_mode: default
+
+  db:
+      image: mysql:5.7.22
+      container_name: db
+      restart: unless-stopped
+      tty: true
+      ports:
+        - "3306:3306"
+      environment:
+        MYSQL_DATABASE: laravel
+        MYSQL_ROOT_PASSWORD: root
+        SERVICE_TAGS: dev
+        SERVICE_NAME: mysql
+      volumes:
+        - dbdata:/var/lib/mysql/
+        - ./config/mysql/my.cnf:/etc/mysql/my.cnf
+      network_mode: bridge
+volumes:
+  dbdata:
+    driver: local
